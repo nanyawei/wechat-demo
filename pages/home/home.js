@@ -16,12 +16,16 @@ Page({
    */
   onLoad: function (options) {
     // onlineService.getOnline('Get').then(res => console.log(res))
+    wx.showLoading({
+      title: 'top 10数据获取中，请稍后...'
+    });
     movieService.tops({start: 1,count: 10}).then(res => {
       console.log(res.data.subjects)
       this.setData({
         subjects: res.data.subjects
-      })
-    });
+      });
+      wx.hideLoading();
+    }).fail(err => wx.hideLoading());
   
   },
 
