@@ -1,8 +1,14 @@
 <!--pages/detail/index.wxml-->
 <view class="" hover-class="none" hover-stop-propagation="false">
-  <view wx:if="{{!info}}" hover-class="none" hover-stop-propagation="false">
-    点击扫一扫获取信息
+  <view wx:if="{{info}}">
+    <view>
+      你扫到的是：{{type}}
+    </view>
+    <view>
+      内容为：{{info}}
+    </view>
   </view>
-  <image bindtap="picture" class="saoyisao" src="../../icon/扫一扫.png" />
-  {{info}}
+  <view>
+    <Button class="scancode" bindtap="scanCode">点击扫一扫获取信息</Button>
+  </view>
 </view>

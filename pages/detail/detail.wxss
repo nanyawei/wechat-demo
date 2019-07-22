@@ -1,5 +1,5 @@
 /* pages/detail/index.wxss */
-.saoyisao {
-  width: 100rpx;
-  height: 100rpx;
+.scancode {
+  background-color: rgb(35, 187, 233);
+  color: #fff;
 }
