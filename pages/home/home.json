@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "豆瓣影城",
   "usingComponents": {
     "i-card": "../../dist/card/index",
     "i-row": "../../dist/row/index"

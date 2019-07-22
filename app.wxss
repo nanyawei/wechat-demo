@@ -12,3 +12,7 @@
 .card-box {
   margin-bottom: 10rpx;
 }
+
+image, view {
+  box-sizing: content-box;
+}

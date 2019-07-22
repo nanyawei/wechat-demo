@@ -1,2 +1,8 @@
 <!--pages/detail/index.wxml-->
-<text>pages/detail/index.wxml</text>
+<view class="" hover-class="none" hover-stop-propagation="false">
+  <view wx:if="{{!info}}" hover-class="none" hover-stop-propagation="false">
+    点击扫一扫获取信息
+  </view>
+  <image bindtap="picture" class="saoyisao" src="../../icon/扫一扫.png" />
+  {{info}}
+</view>

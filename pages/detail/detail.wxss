@@ -1,1 +1,5 @@
 /* pages/detail/index.wxss */
+.saoyisao {
+  width: 100rpx;
+  height: 100rpx;
+}

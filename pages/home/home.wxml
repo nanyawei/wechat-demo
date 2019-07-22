@@ -1,14 +1,17 @@
 <!-- pages/home/index.wxml -->
 <view>
   <h2>{{title}}</h2>
-  <view wx:for="{{subjects}}"  class="card-box">
-    <i-card title="{{item.title}}" full extra="{{item.year}}年">
-      <view slot="content"> 
-        <image src="{{item.images.small}}" />
+  <swiper next-margin="530rpx">
+    <swiper-item wx:for="{{subjects}}" class="list-item">
+      <view hover-class="none" hover-stop-propagation="false">
+        <image mode="aspectFit" src="{{item.images.small}}" />
       </view>
-      <view slot="footer" >
-        <text wx:for="{{item.genres}}">{{item}}</text>
+      <view class="list-item-title" hover-class="none" hover-stop-propagation="false">
+        <h4>
+          No.{{index + 1}}
+        </h4>
+        {{item.title}}
       </view>
-    </i-card>
-  </view>
+    </swiper-item>
+  </swiper>
 </view>

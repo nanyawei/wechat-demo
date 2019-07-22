@@ -1,10 +1,9 @@
 {
   "pages": [
-    "pages/home/home",
+    "pages/detail/detail",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/user/user",
-    "pages/detail/detail"
+    "pages/home/home",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,12 +17,20 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "./icon/首页1.png"
+        "iconPath": "./icon/首页1.png",
+        "selectedIconPath": "./icon/首页1.png"
       },
       {
         "pagePath": "pages/home/home",
         "text": "中心",
-        "iconPath": "./icon/分类1.png"
+        "iconPath": "./icon/分类1.png",
+        "selectedIconPath": "./icon/分类1.png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "扫一扫",
+        "iconPath": "./icon/扫一扫.png",
+        "selectedIconPath": "./icon/扫一扫.png"
       }
     ]
   }
