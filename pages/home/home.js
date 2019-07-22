@@ -1,7 +1,5 @@
 // pages/home/index.js
 import { movieService } from '../../utils/douban.js';
-// import {  } from 'iview-weapp';
-
 
 Page({
 

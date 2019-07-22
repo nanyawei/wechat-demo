@@ -80,26 +80,27 @@ Page({
         that.setData({
           info: url
         });
-        if (!url) {
-          return wx.showToast({
-            title: "未识别出二维码中地址，跳转失败！"
-          });
-        }
-        wx.navigateTo({
-          url: page,
-          success: function(res){
-            // success
-            console.log('res', res)
-          },
-          fail: function() {
-            // fail
-            console.log('fail', fail)
-          },
-          complete: function() {
-            // complete
-            console.log('complete', complete)
-          }
-        })
+        // 跳转暂未写
+        // if (!url) {
+        //   return wx.showToast({
+        //     title: "未识别出二维码中地址，跳转失败！"
+        //   });
+        // }
+        // wx.navigateTo({
+        //   url: page,
+        //   success: function(res){
+        //     // success
+        //     console.log('res', res)
+        //   },
+        //   fail: function() {
+        //     // fail
+        //     console.log('fail', fail)
+        //   },
+        //   complete: function() {
+        //     // complete
+        //     console.log('complete', complete)
+        //   }
+        // })
       },
       fail: (err) => {
         console.log(err);
@@ -111,15 +112,15 @@ Page({
   }
 });
 
-let getQueryString = function (url, name) {
-  console.log("url = " + url)
-  console.log("name = " + name)
-  var reg = new RegExp('(^|&|/?)' + name + '=([^&|/?]*)(&|/?|$)', 'i')
-  var r = url.substr(1).match(reg)
-  if (r != null) {
-    console.log("r = " + r)
-    console.log("r[2] = " + r[2])
-    return r[2]
-  }
-  return null;
-}
+// let getQueryString = function (url, name) {
+//   console.log("url = " + url)
+//   console.log("name = " + name)
+//   var reg = new RegExp('(^|&|/?)' + name + '=([^&|/?]*)(&|/?|$)', 'i')
+//   var r = url.substr(1).match(reg)
+//   if (r != null) {
+//     console.log("r = " + r)
+//     console.log("r[2] = " + r[2])
+//     return r[2]
+//   }
+//   return null;
+// }
