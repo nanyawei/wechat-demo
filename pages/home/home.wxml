@@ -1,0 +1,14 @@
+<!-- pages/home/index.wxml -->
+<view>
+  <h2>{{title}}</h2>
+  <view wx:for="{{subjects}}"  class="card-box">
+    <i-card title="{{item.title}}" full extra="{{item.year}}年">
+      <view slot="content"> 
+        <image src="{{item.images.small}}" />
+      </view>
+      <view slot="footer" >
+        <text wx:for="{{item.genres}}">{{item}}</text>
+      </view>
+    </i-card>
+  </view>
+</view>
