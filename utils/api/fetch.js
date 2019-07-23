@@ -35,3 +35,15 @@ export const fetch = (api, path, method = 'Get', params) => {
     })
   });
 };
+
+// 小程序中Promise没有finally方法
+Promise.prototype.finally = function (callback) {
+  const Promise = this.constructor;
+
+  return this.then((value) => {
+    Promise.resolve(callback()).then(() => {return value})
+  }, (reason) => {
+    Promise.resolve(callback()).then(() => {throw reason})
+  });
+}
+
