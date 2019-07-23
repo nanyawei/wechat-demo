@@ -1,4 +1,4 @@
-import { fetch } from './fetch.js';
+import { fetch } from './api/fetch.js/index.js';
 
 // const AppKey = '3cface9cc873b6d0316b0495bb37875d';
 const api = 'https://douban-api.uieee.com/v2';

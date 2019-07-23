@@ -1,5 +1,5 @@
 // pages/home/index.js
-import { movieService } from '../../utils/douban.js';
+import { movieService } from '../../utils/api/douban.js/index.js';
 
 Page({
 
@@ -32,7 +32,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log(wx.getCurrentPages())
+
   },
 
   /**
