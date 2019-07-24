@@ -1,5 +1,5 @@
 // pages/home/index.js
-import { movieService } from '../../utils/api/douban.js/index.js';
+import { movieService } from '../../utils/api/douban';
 
 Page({
 
