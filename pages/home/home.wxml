@@ -2,7 +2,7 @@
 <view>
   <h2>{{title}}</h2>
   <swiper next-margin="530rpx">
-    <swiper-item wx:for="{{subjects}}" class="list-item">
+    <swiper-item wx:for="{{subjects}}" key="{{index + item.title}}" class="list-item">
       <view hover-class="none" hover-stop-propagation="false">
         <image mode="aspectFit" src="{{item.images.small}}" />
       </view>
